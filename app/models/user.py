@@ -1,7 +1,6 @@
-from datetime import datetime
+from datetime import datetime, UTC
 import re
 from uuid import UUID, uuid4
-
 
 class Usuario:
     def __init__(self, nome: str, email: str, senha: str, id: str | None = None, criado_em: datetime | None = None):
@@ -9,7 +8,7 @@ class Usuario:
         self.nome = nome              # usa setter
         self.email = email            # usa setter
         self.senha = senha            # usa setter
-        self.__set_criado_em(criado_em if criado_em is not None else datetime.utcnow())
+        self.__set_criado_em(criado_em if criado_em is not None else datetime.now(UTC))
 
     # ----------------------------
     # ID
@@ -20,7 +19,7 @@ class Usuario:
         return self.__id
 
     # Setter privado — só o construtor usa
-    def _set_id(self, valor: str):
+    def __set_id(self, valor: str):
         # valida se é um UUID válido
         try:
             UUID(valor)
@@ -39,7 +38,6 @@ class Usuario:
     def __set_criado_em(self, valor: datetime):
         if not isinstance(valor, datetime):
             raise ValueError("criado_em deve ser um datetime válido.")
-
         self.__criado_em = valor
 
     # ----------------------------
@@ -84,7 +82,7 @@ class Usuario:
     def senha(self, valor: str):
         if len(valor) < 6:
             raise ValueError("A senha deve ter pelo menos 6 caracteres.")
-        # ⚠️ Aqui você poderia aplicar hash (ex: bcrypt)
+        # Aqui você poderia aplicar hash (ex: bcrypt)
         self._senha = valor
 
     # Método seguro para checar a senha
@@ -96,4 +94,7 @@ class Usuario:
     # ----------------------------
 
     def __repr__(self):
-        return f"Usuario(id='{self._id}', nome='{self._nome}', email='{self._email}')"
+        return f"Usuario(id='{self.id}', nome='{self.nome}', email='{self.email}, criado_em='{self.criado_em}')"
+
+    def __str__(self):
+        return f"Usuário: {self.nome}, {self.email}"
