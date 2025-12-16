@@ -126,6 +126,7 @@ Aqui estão algumas imagens que ilustram a execução do código.
 **4. Testes Automatizados**
 *Descrição:* Resultado da execução dos testes automatizados das classes Usuario, Doador, Beneficiario e Item.
 
+<img src="docs/imagens/testes_da_parte_de_ivanildo.png" width="300"/>
 <img src="docs/imagens/testes.jpg" width="300"/>
 
 ## Time do Projeto
