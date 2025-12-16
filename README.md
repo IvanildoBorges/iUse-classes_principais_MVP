@@ -4,6 +4,12 @@
 ## Descrição do projeto
 O iUse é um sistema inspirado na **Clean Architecture**, que visa organizar o código de forma modular, separando claramente o domínio da aplicação das camadas de serviço e interface. Isso melhora a legibilidade, manutenção e testabilidade.
 
+## Possíveis usos da nossa solução
+O iUse é uma plataforma voltada para a doação, arrecadação e distribuição de materiais escolares em boas condições, tendo como objetivo atender pessoas em situação de vulnerabilidade social. A solução busca facilitar a conexão entre doadores e beneficiários, promovendo o reaproveitamento de recursos educacionais que ainda possuem utilidade.
+No contexto social, a plataforma pode ser utilizada por escolas públicas, ONGs, projetos sociais e instituições comunitárias para organizar e gerenciar campanhas de arrecadação de materiais escolares, como livros, cadernos, mochilas e itens de papelaria. Com isso, é possível garantir que os materiais arrecadados sejam distribuídos de forma mais justa, eficiente e transparente.
+Para indivíduos, o iUse permite que pessoas físicas realizem doações de maneira prática, incentivando a solidariedade e a consciência social. Já para os beneficiários, a plataforma representa uma oportunidade de acesso a materiais escolares essenciais, contribuindo para a permanência e o melhor desempenho no ambiente educacional.
+Dessa forma, mesmo em um cenário hipotético, o iUse demonstra potencial para gerar impacto social positivo, ao unir tecnologia e responsabilidade social na resolução de um problema real enfrentado por muitas comunidades.
+
 ## Estrutura do projeto
 - ```app/domain```: Contém as entidades centrais e as regras de negócio.
 - ```app/services```: Serviços de aplicação, como autenticação e orquestração de fluxos.
