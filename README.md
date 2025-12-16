@@ -106,22 +106,27 @@ O ```main.py``` atua apenas como ponto de entrada da aplicação, delegando a ex
 ## Imagens da execução
 Aqui estão algumas imagens que ilustram a execução do código.
 
-**Ivanildo Executando classes bases**
+**Ivanildo executando classes bases:**
+
 **1. Tipo de Usuário (Doador/Beneficiário)**
 *Descrição:* Seleção do tipo de usuário para a aplicação.
-![Tipo de Usuário](docs/imagens/tipo_De_usuarios.jpg)
+
+<img src="docs/imagens/tipo_De_usuarios.jpg" width="300"/>
 
 **2. Usuário Preenchido**
 *Descrição:* Tela mostrando o formulário de usuário preenchido.
-![Usuário Preenchido](docs/imagens/usuario_preenchido.jpg)
+
+<img src="docs/imagens/usuario_preenchido.jpg" width="300"/>
 
 **3. Fim da Execução**
 *Descrição:* Finalização da execução do sistema, com feedback ao usuário.
-![Fim da Execução](docs/imagens/fim_da_execucao.jpg)
+
+<img src="docs/imagens/fim_da_execucao.jpg" width="300"/>
 
 **4. Testes Automatizados**
 *Descrição:* Resultado da execução dos testes automatizados das classes Usuario, Doador, Beneficiario e Item.
-![Testes Automatizados](docs/imagens/testes.jpg)
+
+<img src="docs/imagens/testes.jpg" width="300"/>
 
 ## Time do Projeto
 
